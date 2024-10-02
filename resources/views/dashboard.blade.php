@@ -14,4 +14,21 @@
             </div>
         </div>
     </div>
+    <!-- No seu arquivo de dashboard, por exemplo: resources/views/dashboard.blade.php -->
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="text-center">
+            <h1 class="text-2xl font-semibold">Bem-vindo ao Dashboard</h1>
+            <p class="mt-2">Você está conectado como {{ Auth::user()->name }}</p>
+
+            <!-- Botão que redireciona para a página de posts -->
+            <a href="{{ route('posts.index') }}" class="mt-4 inline-block bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">
+                Ir para Posts
+            </a>
+        </div>
+    </div>
+
+
+
+    </div>
+
 </x-app-layout>
